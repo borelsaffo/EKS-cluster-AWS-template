@@ -113,8 +113,8 @@ Resources:
              curl -o eks.yaml https://github.com/borelsaffo/EKS-cluster-AWS-template/blob/c284a9aa3f174fcfaeec22c5934e3529fd51963c/eks-cloudformation.yaml
              aws cloudformation create-stack --stack-name EKS \
              --template-body file://eks.yaml \
-             --parameters ParameterKey=AvailabilityZonePublicSubnet01,ParameterValue="us-east-1a" \
-             ParameterKey=AvailabilityZonePublicSubnet02,ParameterValue="us-east-1b" \
+             --parameters ParameterKey=AvailabilityZonePublicSubnet01,ParameterValue="us-east-1c" \
+             ParameterKey=AvailabilityZonePublicSubnet02,ParameterValue="us-east-1c" \
              ParameterKey=EKSKeyPair,ParameterValue="web-server-key" \
              --capabilities CAPABILITY_NAMED_IAM
 
